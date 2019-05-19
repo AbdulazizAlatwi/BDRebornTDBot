@@ -1,4 +1,4 @@
-# [BDReborn TDBot v2.0](https://telegram.me/BDreborn)
+# [BDRebornTDBot TDBot v2.0](https://telegram.me/BDRebornTDBot)
 
 *An advanced and powerful administration bot based on telegram-bot*
 
@@ -7,7 +7,8 @@
 ```sh
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/BeyondTeam/BDReborn.git -b TDBot
+git clone https://github.com/AbdulazizAlatwi/BDRebornTDBot.git -b TDBot
+mv BDRebornTDBot BDReborn
 cd BDReborn
 chmod +x beyond.sh
 ./beyond.sh install

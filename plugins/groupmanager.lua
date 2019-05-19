@@ -1252,7 +1252,7 @@ else
  data[tostring(target)]["settings"]["flood"] = "waiting"
 save_data(_config.moderation.data, data) 
 if not lang then
-			return '_Please send Status for_ *lock flood* _now_\n_Available status :_\n_اخراج_ *or* _سکوت_\n_for persian commands_\n*kick* _or_ *silent*\n_for english commands_'
+			return '_Please send Status for_ *lock flood* _now_\n_Available status :_\n_حظر_ *or* _كتم_\n_for persian commands_\n*kick* _or_ *silent*\n_for english commands_'
     else 
          return 'لطفا وضعیت قفل ارسال پیام های مکرر رو ارسال کنید\nوضعیت های موجود :\nاخراج یا سکوت\n برای دستورات فارسی\n*kick یا silent*\nبرای دستورات انگلیسی'
 end

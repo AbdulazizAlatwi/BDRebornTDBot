@@ -1,5 +1,5 @@
 --Begin Tools.lua :)
-local SUDO = 157059515 --- put Your ID here! <===
+local SUDO = 545985657 --- put Your ID here! <===
 function exi_files(cpath)
     local files = {}
     local pth = cpath
@@ -683,9 +683,9 @@ if is_sudo(msg) then
 					redis:set('CheckExpire::'..msg.to.id,true)
 				end
 				if lang then
-					tdbot.sendMessage(msg.to.id, msg.id, 1, '_گروه به مدت 3 دقیقه برای اجرای تنظیمات شارژ میباشد._', 1, 'md')
+					tdbot.sendMessage(msg.to.id, msg.id, 1, ' 3 ._', 1, 'md')
 				else
-					tdbot.sendMessage(msg.to.id, msg.id, 1, '_Group charged 3 minutes  for settings._', 1, 'md')
+					tdbot.sendMessage(msg.to.id, msg.id, 1, '_3 اخراج or سکوت._', 1, 'md')
 				end
 		end
 		if ((matches[1] == 'rem' and not Clang) or (matches[1] == "حذف گروه" and Clang)) then
@@ -989,10 +989,10 @@ end
 					redis:set('CheckExpire::'..msg.to.id)
 				end
 				if lang then
-					tdbot.sendMessage(msg.to.id, msg.id, 1, 'ربات با موفقیت تنظیم شد\nمدت فعال بودن ربات در گروه به '..matches[2]..' روز دیگر تنظیم شد...', 1, 'md')
+					tdbot.sendMessage(msg.to.id, msg.id, 1, '\n '..matches[2]..' ...', 1, 'md')
 					tdbot.sendMessage(SUDO, 0, 1, 'ربات در گروه '..matches[2]..' به مدت `'..msg.to.id..'` روز تمدید گردید.', 1, 'md')
 				else
-					tdbot.sendMessage(msg.to.id, msg.id, 1, 'ربات با موفقیت تنظیم شد\nمدت فعال بودن ربات در گروه به '..matches[2]..' روز دیگر تنظیم شد...', 1, 'md')
+					tdbot.sendMessage(msg.to.id, msg.id, 1, '\n '..matches[2]..' ...', 1, 'md')
 					tdbot.sendMessage(SUDO, 0, 1, 'ربات در گروه '..matches[2]..' به مدت `'..msg.to.id..'` روز تمدید گردید.', 1, 'md')
 				end
 			else
